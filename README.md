@@ -11,7 +11,11 @@ Currently worki **Xcode**. If you want to learn about StackEdit, you can read me
 
 ## SwiftLint
 
-## Fastlane
+## Fastlane integration
 ### snapshot
 
+## Travis CI Setup
+## Codecov Setup
+
 ## Cocoapods libraries
+### SwiftyBeaver console, file, cloud logger
