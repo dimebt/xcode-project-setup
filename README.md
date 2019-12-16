@@ -55,6 +55,8 @@ fi
 ## Codecov Setup
 
 ## Cocoapods libraries
+### PromiseKit or Combine 
+### Lottie
 ### SwiftyBeaver console, file, cloud logger
 
 
