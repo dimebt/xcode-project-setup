@@ -20,6 +20,30 @@ Xcode 11 Template to use as a starting point for an iOS apps.
 https://github.com/dimebt/Coordinator-Xcode-Project-Swift-Template
 
 ## SwiftLint
+A tool to enforce Swift style and conventions
+### Installation
+
+#### Using [Homebrew](http://brew.sh/):
+
+```
+brew install swiftlint
+```
+
+#### Xcode
+
+Integrate SwiftLint into an Xcode scheme to get warnings and errors displayed
+in the IDE. Just add a new "Run Script Phase" with:
+
+```bash
+if which swiftlint >/dev/null; then
+  swiftlint
+else
+  echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+fi
+```
+
+![](assets/runscript.png)
+
 
 ## Fastlane integration
 ### snapshot
