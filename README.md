@@ -4,6 +4,14 @@ Currently worki **Xcode**. If you want to learn about StackEdit, you can read me
 
 
 # Quick Reference
+| Feature | Link |
+| ------ | ------ |
+| Coordinator Template | [https://github.com/dimebt/Coordinator-Xcode-Project-Swift-Template] |
+| SwiftLint | [https://github.com/realm/SwiftLint] |
+| Google Drive | [plugins/googledrive/README.md][PlGd] |
+| OneDrive | [plugins/onedrive/README.md][PlOd] |
+| Medium | [plugins/medium/README.md][PlMe] |
+| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
 
 
 ## Coordinator Template
@@ -23,11 +31,4 @@ https://github.com/dimebt/Coordinator-Xcode-Project-Swift-Template
 ### SwiftyBeaver console, file, cloud logger
 
 
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+
