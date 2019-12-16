@@ -21,6 +21,9 @@ https://github.com/dimebt/Coordinator-Xcode-Project-Swift-Template
 
 ## SwiftLint
 A tool to enforce Swift style and conventions
+
+https://github.com/realm/SwiftLint
+
 ### Installation
 
 #### Using [Homebrew](http://brew.sh/):
