@@ -49,6 +49,11 @@ fi
 
 ![](assets/runscript.png)
 
+#### Disabling rules
+
+```swift
+  // swiftlint:disable:this [name of rule]
+```
 
 ## Fastlane integration
 ### snapshot
