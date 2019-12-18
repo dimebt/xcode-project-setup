@@ -54,9 +54,11 @@ fi
 ## Travis CI Setup
 ## Codecov Setup
 ## DI Container
+## JSON Parser https://app.quicktype.io/
 ## Cocoapods libraries
 ### PromiseKit or Combine 
 ### Lottie
+### Kingfisher
 ### SwiftyBeaver console, file, cloud logger
 
 
