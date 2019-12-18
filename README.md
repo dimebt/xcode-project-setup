@@ -77,8 +77,20 @@ Navigate your terminal to your project's directory and run
 fastlane init
 ``` 
 
-#### snapshot
+#### Screenshots
+```swift
+fastlane snapshot
+``` 
 
+
+#### Frameit
+```swift
+fastlane frameit
+``` 
+
+## Unit Test XCTest
+#### HTTP Client mocking
+## UI Test XCTest
 ## Travis CI Setup
 ## Codecov Setup
 ## DI Container
