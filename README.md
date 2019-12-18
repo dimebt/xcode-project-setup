@@ -48,7 +48,8 @@ fi
 ```
 
 ## Fastlane integration
-
+| Feature | Link |
+| ------ | ------ |
 | Documentation | https://docs.fastlane.tools/ |
 
 #### Installing fastlane
