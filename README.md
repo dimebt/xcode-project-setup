@@ -90,6 +90,8 @@ fastlane frameit
 
 ## Unit Test XCTest
 #### HTTP Client mocking
+#### UITableViewDataSource tetsting
+#### UIViewController testing
 ## UI Test XCTest
 ## Travis CI Setup
 ## Codecov Setup
