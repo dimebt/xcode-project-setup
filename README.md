@@ -48,7 +48,35 @@ fi
 ```
 
 ## Fastlane integration
-### snapshot
+
+| Documentation | https://docs.fastlane.tools/ |
+
+#### Installing fastlane
+Install the latest Xcode command line tools:
+```bash
+xcode-select --install
+```
+
+Install fastlane using
+
+#### Using RubyGems
+```bash
+sudo gem install fastlane -NV
+```
+
+
+#### Alternatively using Homebrew
+```bash
+brew cask install fastlane
+```
+
+#### Setting up fastlane
+Navigate your terminal to your project's directory and run
+```bash
+fastlane init
+``` 
+
+#### snapshot
 
 ## Travis CI Setup
 ## Codecov Setup
