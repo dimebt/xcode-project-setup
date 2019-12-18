@@ -35,6 +35,7 @@ brew install swiftlint
 #### Xcode
 
 - Select Target -> Build Phases -> Run Script
+
 Integrate SwiftLint into an Xcode scheme to get warnings and errors displayed
 in the IDE. Just add a new "Run Script Phase" with:
 
