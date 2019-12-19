@@ -21,3 +21,11 @@ platform :ios do
     capture_screenshots(scheme: "Project Setup Fastlane UI Test")
   end
 end
+
+platform :ios do
+  desc "Run Unit Test"
+  lane :tests do
+    run_tests(scheme: "Project Setup Fastlane UI Test")
+  end
+end
+
