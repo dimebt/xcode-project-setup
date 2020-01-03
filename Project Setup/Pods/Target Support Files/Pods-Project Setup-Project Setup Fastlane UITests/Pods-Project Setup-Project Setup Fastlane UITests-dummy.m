@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Project_Setup_Project_Setup_Fastlane_UITests : NSObject
+@end
+@implementation PodsDummy_Pods_Project_Setup_Project_Setup_Fastlane_UITests
+@end

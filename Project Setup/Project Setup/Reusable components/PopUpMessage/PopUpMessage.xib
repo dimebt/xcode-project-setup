@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BarlowCondensed-Medium.ttf">
+            <string>BarlowCondensed-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpMessageViewController" customModule="Teltonika_SMS_Commands" customModuleProvider="target">
+            <connections>
+                <outlet property="blurview" destination="Enp-W0-mWe" id="2Pn-4C-y5r"/>
+                <outlet property="button" destination="itG-ma-rZx" id="nuT-ma-buL"/>
+                <outlet property="contentView" destination="uzf-aN-oDk" id="F9a-Bp-EHo"/>
+                <outlet property="icon" destination="DJu-Xv-IJR" id="O75-y8-5Ia"/>
+                <outlet property="messageBoxView" destination="O15-Va-bdw" id="sSK-sw-kRU"/>
+                <outlet property="messageBoxViewTopConstraint" destination="H9Z-60-ibA" id="xY8-J1-8Yp"/>
+                <outlet property="subtitleMessage" destination="YmA-Tj-upw" id="epw-CC-0rL"/>
+                <outlet property="titleMessage" destination="NGw-7t-W1X" id="VtF-3C-bAZ"/>
+                <outlet property="view" destination="uzf-aN-oDk" id="qw8-gB-ehi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uzf-aN-oDk">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Enp-W0-mWe">
+                    <rect key="frame" x="0.0" y="0.0" width="155" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O15-Va-bdw">
+                    <rect key="frame" x="40" y="396" width="75" height="332"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rs0-QO-LZB">
+                            <rect key="frame" x="7.5" y="27.5" width="60" height="276.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DJu-Xv-IJR">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="F4o-EB-VFw"/>
+                                        <constraint firstAttribute="width" constant="60" id="w7R-VO-eAE"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGw-7t-W1X" customClass="UILabelTitle3" customModule="Teltonika_SMS_Commands" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="70" width="60" height="72"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle message or long description for the message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmA-Tj-upw" customClass="UILabelBody" customModule="Teltonika_SMS_Commands" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="152" width="60" height="81.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itG-ma-rZx">
+                                    <rect key="frame" x="0.0" y="243.5" width="60" height="33"/>
+                                    <fontDescription key="fontDescription" name="BarlowCondensed-Medium" family="Barlow Condensed Medium" pointSize="17"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="fTE-ei-xrq"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJG-vq-VAw" userLabel="Dismiss">
+                            <rect key="frame" x="35" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="OB8-pD-VXr"/>
+                                <constraint firstAttribute="height" constant="30" id="Sux-hf-xs0"/>
+                            </constraints>
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <state key="normal" image="Close"/>
+                            <connections>
+                                <action selector="closePressed:" destination="-1" eventType="touchUpInside" id="hDA-sK-djX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rs0-QO-LZB" firstAttribute="width" secondItem="O15-Va-bdw" secondAttribute="width" multiplier="0.8" id="7xx-r8-y1D"/>
+                        <constraint firstItem="gJG-vq-VAw" firstAttribute="top" secondItem="O15-Va-bdw" secondAttribute="top" constant="10" id="MI3-Iy-KqZ"/>
+                        <constraint firstItem="rs0-QO-LZB" firstAttribute="centerY" secondItem="O15-Va-bdw" secondAttribute="centerY" id="Rs0-cH-Z0g"/>
+                        <constraint firstAttribute="trailing" secondItem="gJG-vq-VAw" secondAttribute="trailing" constant="10" id="a5u-ZN-FAt"/>
+                        <constraint firstItem="rs0-QO-LZB" firstAttribute="centerX" secondItem="O15-Va-bdw" secondAttribute="centerX" id="kXR-0c-Ryi"/>
+                        <constraint firstAttribute="height" secondItem="rs0-QO-LZB" secondAttribute="height" multiplier="1.2" id="oVJ-Lx-ulk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Enp-W0-mWe" firstAttribute="leading" secondItem="uzf-aN-oDk" secondAttribute="leading" id="5pr-ll-lKM"/>
+                <constraint firstItem="O15-Va-bdw" firstAttribute="centerX" secondItem="uzf-aN-oDk" secondAttribute="centerX" id="6fD-Pt-zeM"/>
+                <constraint firstAttribute="bottom" secondItem="O15-Va-bdw" secondAttribute="top" constant="500" id="H9Z-60-ibA"/>
+                <constraint firstItem="Enp-W0-mWe" firstAttribute="top" secondItem="uzf-aN-oDk" secondAttribute="top" id="efi-WW-7i0"/>
+                <constraint firstAttribute="bottom" secondItem="Enp-W0-mWe" secondAttribute="bottom" id="j9G-NY-cVb"/>
+                <constraint firstItem="O15-Va-bdw" firstAttribute="leading" secondItem="uzf-aN-oDk" secondAttribute="leading" constant="40" id="sD2-Mt-Euw"/>
+                <constraint firstAttribute="trailing" secondItem="O15-Va-bdw" secondAttribute="trailing" constant="40" id="sGe-yS-hr9"/>
+                <constraint firstAttribute="trailing" secondItem="Enp-W0-mWe" secondAttribute="trailing" id="w94-fq-P0L"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="egq-my-gIw"/>
+            <point key="canvasLocation" x="-2114.4927536231885" y="-5.3571428571428568"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Close" width="39" height="39"/>
+    </resources>
+</document>

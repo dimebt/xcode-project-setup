@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Project Setup' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Project Setup
+  pod "Device", '~> 3.2.1'
+  pod 'lottie-ios'
+  pod 'Kingfisher', '~> 5.0'
+  pod 'RealmSwift'
+
+  target 'Project Setup Fastlane UITests' do
+    # Pods for testing
+  end
+
+  target 'Project SetupTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

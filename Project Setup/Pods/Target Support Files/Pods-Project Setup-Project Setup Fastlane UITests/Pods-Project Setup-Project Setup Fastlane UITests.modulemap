@@ -1,0 +1,6 @@
+framework module Pods_Project_Setup_Project_Setup_Fastlane_UITests {
+  umbrella header "Pods-Project Setup-Project Setup Fastlane UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
